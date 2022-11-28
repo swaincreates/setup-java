@@ -43,6 +43,7 @@ const supportedPackageManager: PackageManager[] = [
     id: 'sbt',
     path: [
       join(os.homedir(), '.ivy2', 'cache'),
+      join(os.homedir(), '.ivy2', 'maven-cache'),
       join(os.homedir(), '.sbt'),
       getCoursierCachePath(),
       // Some files should not be cached to avoid resolution problems.
